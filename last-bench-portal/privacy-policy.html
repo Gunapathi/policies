@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Last Bench Portal</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #1a73e8;
+      --primary-dark: #1557b0;
+      --bg: #f8f9fa;
+      --surface: #ffffff;
+      --border: #e0e0e0;
+      --text: #202124;
+      --text-secondary: #5f6368;
+      --accent-bg: #e8f0fe;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+
+    header .app-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 18px;
+      margin-bottom: 16px;
+    }
+
+    header .app-icon svg { width: 44px; height: 44px; fill: #fff; }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+
+    .meta-bar {
+      background: var(--accent-bg);
+      border: 1px solid #c5d7f7;
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-size: 0.88rem;
+      color: var(--primary-dark);
+      margin-bottom: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .meta-bar span { display: flex; align-items: center; gap: 6px; }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 24px;
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card h2 .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--accent-bg);
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .card h2 .icon svg { width: 18px; height: 18px; fill: var(--primary); }
+
+    .card p { color: var(--text); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 20px;
+      margin: 10px 0 12px;
+    }
+
+    li { margin-bottom: 6px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.92rem;
+    }
+
+    th {
+      background: var(--accent-bg);
+      color: var(--primary-dark);
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 600;
+      border: 1px solid #c5d7f7;
+    }
+
+    td {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td { background: #fafafa; }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .badge-yes { background: #e6f4ea; color: #137333; }
+    .badge-no  { background: #fce8e6; color: #c5221f; }
+
+    .highlight-box {
+      background: #fff8e1;
+      border-left: 4px solid #f9ab00;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 0.93rem;
+      color: #603c00;
+    }
+
+    .contact-box {
+      background: var(--accent-bg);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-top: 12px;
+    }
+
+    .contact-box a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-box a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .card { padding: 20px; }
+      .meta-bar { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-icon">
+    <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+  </div>
+  <h1>Last Bench Portal</h1>
+  <p>Privacy Policy</p>
+</header>
+
+<div class="container">
+
+  <div class="meta-bar">
+    <span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+      <strong>Effective date:</strong>&nbsp;March 8, 2026
+    </span>
+    <span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+      <strong>Last updated:</strong>&nbsp;March 8, 2026
+    </span>
+    <span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-5h2v2h-2zm0-8h2v6h-2z"/></svg>
+      Package: <strong>com.lastbenchportal.app</strong>
+    </span>
+  </div>
+
+  <!-- 1. Introduction -->
+  <div class="card">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></span>
+      1. Introduction
+    </h2>
+    <p>
+      Welcome to <strong>Last Bench Portal</strong>, a video learning platform operated by
+      <strong>Netsted Infotech</strong> ("we", "us", or "our"), based in Tiruchirappalli, Tamil Nadu, India.
+    </p>
+    <p>
+      This Privacy Policy explains how we collect, use, store, and protect your personal information
+      when you use our Android application (<strong>Last Bench Portal</strong>,
+      package <code>com.lastbenchportal.app</code>).
+    </p>
+    <p>
+      By using the app, you agree to the practices described in this policy. If you do not agree,
+      please discontinue use of the application.
+    </p>
+  </div>
+
+  <!-- 2. Who Can Use This App -->
+  <div class="card">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></span>
+      2. Who Can Use This App
+    </h2>
+    <p>
+      Last Bench Portal operates on an <strong>invite-only</strong> basis. Users can only create
+      an account by accepting an invite link issued by an administrator. We do not allow
+      self-registration.
+    </p>
+    <p>User roles within the platform include:</p>
+    <ul>
+      <li><strong>Master Admin / Admin</strong> — platform administrators</li>
+      <li><strong>Teacher</strong> — educators who upload course content</li>
+      <li><strong>Prime Student</strong> — students with access to premium content</li>
+      <li><strong>Student</strong> — students with access to standard content</li>
+    </ul>
+  </div>
+
+  <!-- 3. Information We Collect -->
+  <div class="card">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8h16v10zm-9-1h2v-2h-2v2zm0-4h2V7h-2v6z"/></svg></span>
+      3. Information We Collect
+    </h2>
+    <p>We collect the following categories of information:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Data Type</th>
+          <th>Source</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Full name</td>
+          <td>Google Sign-In</td>
+          <td>Display within the app, account identification</td>
+        </tr>
+        <tr>
+          <td>Email address</td>
+          <td>Google Sign-In</td>
+          <td>Account identification, invite matching</td>
+        </tr>
+        <tr>
+          <td>Google User ID (UID)</td>
+          <td>Firebase Authentication</td>
+          <td>Unique account identifier in our database</td>
+        </tr>
+        <tr>
+          <td>Profile photo URL</td>
+          <td>Google Sign-In</td>
+          <td>Display within the app</td>
+        </tr>
+        <tr>
+          <td>Phone number</td>
+          <td>Administrator entry (optional)</td>
+          <td>Contact reference; not collected automatically</td>
+        </tr>
+        <tr>
+          <td>Staff / Student ID</td>
+          <td>Set by administrator (optional)</td>
+          <td>Identification within the institution</td>
+        </tr>
+        <tr>
+          <td>App activity (content accessed)</td>
+          <td>In-app behaviour</td>
+          <td>Download count tracking for uploaded content</td>
+        </tr>
+        <tr>
+          <td>Device login timestamps</td>
+          <td>In-app behaviour</td>
+          <td>Security — last login tracking</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-box">
+      We do <strong>not</strong> collect precise location data, device identifiers (IMEI, MAC address),
+      financial information, or any sensitive personal data beyond what is listed above.
+    </div>
+  </div>
+
+  <!-- 4. How We Use Your Information -->
+  <div class="card">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></span>
+      4. How We Use Your Information
+    </h2>
+    <p>We use the collected information for the following purposes:</p>
+    <ul>
+      <li>Authenticating your identity via Google Sign-In</li>
+      <li>Granting role-based access to course content (videos, files)</li>
+      <li>Displaying your name and profile within the platform</li>
+      <li>Matching your Google account to an existing invite issued by an administrator</li>
+      <li>Tracking download counts for uploaded content (used by teachers and admins)</li>
+      <li>Maintaining an audit log of administrative actions for security and accountability</li>
+      <li>Enforcing platform security (account lockout after repeated failed attempts)</li>
+      <li>Enabling offline video playback with encrypted storage on your device</li>
+    </ul>
+    <p>We do <strong>not</strong> use your data for advertising, profiling, or sale to third parties.</p>
+  </div>
+
+  <!-- 5. Offline Storage & Encryption -->
+  <div class="card">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg></span>
+      5. Offline Storage &amp; On-Device Encryption
+    </h2>
+    <p>
+      Last Bench Portal allows eligible users to download videos for offline viewing.
+      Downloaded content is stored on your device with the following protections:
+    </p>
+    <ul>
+      <li>Videos are encrypted using <strong>AES-256-CBC</strong> encryption before being saved</li>
+      <li>
+        A unique encryption key is generated per user and stored in the Android
+        <strong>Keystore</strong> (backed by hardware security where available)
+      </li>
+      <li>Encrypted files are stored in a private, per-user directory within the app's sandbox</li>
+      <li>Videos are decrypted only temporarily during playback and cleaned up immediately after</li>
+      <li>
+        <strong>Screenshot and screen recording are blocked</strong> during video playback
+        using Android's <code>FLAG_SECURE</code> mechanism
+      </li>
+    </ul>
+    <div class="highlight-box">
+      If the encryption key is lost (e.g. after app uninstall or device reset), downloaded
+      videos become unreadable by design — you will need to re-download them.
+    </div>
+  </div>
+
+  <!-- 6. Third-Party Services -->
+  <div class="card">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5C3.34 3 2 4.34 2 6v14c0 1.66 1.34 3 3 3h14c1.66 0 3-1.34 3-3V6c0-1.66-1.34-3-3-3h-1V1h-2zm3 19H5V9h14v11z"/></svg></span>
+      6. Third-Party Services
+    </h2>
+    <p>We use the following third-party services. Each has its own privacy policy:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Provider</th>
+          <th>Purpose</th>
+          <th>Data Shared</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Firebase Authentication</td>
+          <td>Google LLC</td>
+          <td>User identity &amp; login</td>
+          <td>Email, name, Google UID, profile photo</td>
+        </tr>
+        <tr>
+          <td>Cloud Firestore</td>
+          <td>Google LLC</td>
+          <td>User profiles, content metadata, audit logs</td>
+          <td>Profile data, activity metadata</td>
+        </tr>
+        <tr>
+          <td>Firebase Cloud Functions</td>
+          <td>Google LLC</td>
+          <td>Secure server-side operations (upload, download URLs)</td>
+          <td>User role, file identifiers</td>
+        </tr>
+        <tr>
+          <td>Google Sign-In</td>
+          <td>Google LLC</td>
+          <td>Authentication via Google account</td>
+          <td>Name, email, profile photo</td>
+        </tr>
+        <tr>
+          <td>Cloudflare R2</td>
+          <td>Cloudflare, Inc.</td>
+          <td>Video and file storage</td>
+          <td>File content (videos, documents); no personal data</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Links to third-party privacy policies:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> ·
+      <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a>
+    </p>
+  </div>
+
+  <!-- 7. Data Retention -->
+  <div class="card">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></span>
+      7. Data Retention
+    </h2>
+    <p>We retain your data as follows:</p>
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Retention Period</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Active user profile (Firestore)</td><td>For the duration of your account</td></tr>
+        <tr><td>Archived user profile</td><td>Retained for audit trail; can be restored or deleted on request</td></tr>
+        <tr><td>Audit logs</td><td>Retained for platform security and compliance</td></tr>
+        <tr><td>Invite records</td><td>Deleted on acceptance; withdrawn invites retained for audit</td></tr>
+        <tr><td>Offline cached videos (on-device)</td><td>Until you delete them or uninstall the app</td></tr>
+        <tr><td>Firebase Authentication data</td><td>Until account is deleted</td></tr>
+      </tbody>
+    </table>
+    <p>
+      When an administrator archives your account, your profile is moved to an archive
+      collection and your Firebase Authentication is disabled. To request full deletion, contact us.
+    </p>
+  </div>
+
+  <!-- 8. Data Security -->
+  <div class="card">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg></span>
+      8. Data Security
+    </h2>
+    <p>We implement the following measures to protect your data:</p>
+    <ul>
+      <li><strong>All data in transit</strong> is encrypted via HTTPS/TLS</li>
+      <li>
+        <strong>Firebase Security Rules</strong> enforce strict access controls —
+        users can only access data their role permits
+      </li>
+      <li>
+        <strong>Cloudflare R2 content</strong> is accessed only through time-limited
+        pre-signed URLs (15 minutes for upload, 1 hour for streaming) — no direct bucket access
+      </li>
+      <li>
+        <strong>R2 credentials</strong> are stored in Google Secret Manager and never
+        exposed to client devices
+      </li>
+      <li>
+        <strong>Role-based access</strong> is enforced on both the client (UI) and server
+        (Cloud Functions) — neither can be bypassed independently
+      </li>
+      <li>
+        <strong>Rate limiting</strong> is applied to authentication attempts:
+        5 failed attempts within 15 minutes will temporarily lock the account
+      </li>
+      <li>
+        <strong>Offline video encryption:</strong> AES-256-CBC with Android Keystore-backed keys
+        (described in Section 5)
+      </li>
+    </ul>
+  </div>
+
+  <!-- 9. Your Rights -->
+  <div class="card">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></span>
+      9. Your Rights
+    </h2>
+    <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+    <table>
+      <thead>
+        <tr><th>Right</th><th>Available</th><th>How to Exercise</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Access your data</td>
+          <td><span class="badge badge-yes">Yes</span></td>
+          <td>Contact us via email below</td>
+        </tr>
+        <tr>
+          <td>Correct inaccurate data</td>
+          <td><span class="badge badge-yes">Yes</span></td>
+          <td>Ask your platform administrator or contact us</td>
+        </tr>
+        <tr>
+          <td>Delete your account and data</td>
+          <td><span class="badge badge-yes">Yes</span></td>
+          <td>Contact us via email; we will process within 30 days</td>
+        </tr>
+        <tr>
+          <td>Export your data</td>
+          <td><span class="badge badge-yes">Yes</span></td>
+          <td>Contact us via email below</td>
+        </tr>
+        <tr>
+          <td>Opt out of data collection</td>
+          <td><span class="badge badge-no">N/A</span></td>
+          <td>Core data is required for the app to function; discontinue use to opt out</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 10. Children's Privacy -->
+  <div class="card">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M11.5 2C6.26 2 2 6.26 2 11.5S6.26 21 11.5 21 21 16.74 21 11.5 16.74 2 11.5 2zm-1 8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5S12.83 12 12 12s-1.5-.67-1.5-1.5zm2.5 6H11v-5h2v5z"/></svg></span>
+      10. Children's Privacy
+    </h2>
+    <p>
+      Last Bench Portal is a platform for educational institutions and is intended for users
+      <strong>13 years of age and older</strong>. All user accounts are created by institutional
+      administrators through the invite system; we do not knowingly collect personal information
+      from children under 13 without verifiable parental consent.
+    </p>
+    <p>
+      If you believe a minor under 13 has been registered without appropriate consent, please
+      contact us immediately at the address below.
+    </p>
+  </div>
+
+  <!-- 11. Changes to This Policy -->
+  <div class="card">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12z"/></svg></span>
+      11. Changes to This Policy
+    </h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we make material changes,
+      we will update the "Last updated" date at the top of this page. We recommend reviewing
+      this page periodically.
+    </p>
+    <p>
+      Continued use of the application after changes are posted constitutes your acceptance
+      of the revised policy.
+    </p>
+  </div>
+
+  <!-- 12. Contact Us -->
+  <div class="card">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
+      12. Contact Us
+    </h2>
+    <p>
+      For any questions, data requests, or privacy concerns regarding Last Bench Portal,
+      please contact:
+    </p>
+    <div class="contact-box">
+      <p><strong>Netsted Infotech</strong></p>
+      <p>Tiruchirappalli, Tamil Nadu, India</p>
+      <p>Email: <a href="mailto:privacy@netstedinfotech.com">privacy@netstedinfotech.com</a></p>
+      <br>
+      <p style="font-size:0.9rem; color:#5f6368;">
+        We aim to respond to all data requests within <strong>30 days</strong>.
+      </p>
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<footer>
+  &copy; 2026 Netsted Infotech · Last Bench Portal · <code>com.lastbenchportal.app</code>
+  &nbsp;|&nbsp;
+  This policy was last updated on March 8, 2026.
+</footer>
+
+</body>
+</html>
