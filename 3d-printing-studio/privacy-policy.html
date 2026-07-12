@@ -126,6 +126,7 @@
             <li><strong>You sign in with your own Google account.</strong> Backups are uploaded to <em>your</em> Google Drive, into a visible folder named <code>3DPrintingStudioBackups</code>. They are not uploaded to us, and we cannot see them.</li>
             <li><strong>We request only the <code>drive.file</code> permission.</strong> This is the narrowest Drive permission available: it lets the app see and manage <em>only the files the app itself creates</em>. The app cannot see, read or touch any other file in your Google Drive.</li>
             <li><strong>Account information we handle:</strong> your Google account email address and an access token, used solely to sign you in and upload to your Drive. These stay on your device.</li>
+            <li><strong>Scheduled automatic backups:</strong> if you turn on automatic backup and stay signed in, the app uploads a backup to your Drive on the schedule you choose (daily, weekly or monthly) without asking each time. The app keeps the newest five automatic backups in your Drive and deletes older automatic ones; backups you made manually are never auto-deleted. You can turn the schedule off at any time in Settings.</li>
             <li><strong>Your control:</strong> you can back up, restore, list and delete backups from within the app, disconnect the account at any time, or delete the folder directly in Google Drive.</li>
             <li><strong>Backup contents are encrypted only if you have set a backup password</strong> (see section 4). With a password set, the file uploaded to Drive is AES-256 encrypted and Google cannot read its contents; without one, it is an unencrypted archive protected only by your Google account. Either way it is stored under Google's terms.</li>
             <li>Google's handling of your Drive data is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
@@ -148,8 +149,8 @@
         <ul>
             <li><strong>Internet / network state:</strong> used only for Google Drive backup. With cloud backup unused, the app makes no network calls of its own.</li>
             <li><strong>Notifications:</strong> to show the reminders you schedule.</li>
-            <li><strong>Exact alarms:</strong> so a reminder fires at the time you set rather than being delayed.</li>
-            <li><strong>Run at startup:</strong> so reminders you have already scheduled survive a device restart.</li>
+            <li><strong>Exact alarms:</strong> so a reminder fires at the time you set rather than being delayed, and so a scheduled automatic backup runs at its set time (12:00 AM).</li>
+            <li><strong>Run at startup:</strong> so scheduled reminders and automatic backups survive a device restart.</li>
         </ul>
         <p>The app does not request access to your contacts, camera, microphone, location, photos or SMS.</p>
     </div>
@@ -173,6 +174,7 @@
             <li><strong>Minimal cloud permission:</strong> only <code>drive.file</code> — the app can never see the rest of your Drive.</li>
             <li><strong>No third-party analytics or trackers</strong> are embedded in the app.</li>
             <li><strong>Optional AES-256 backup encryption:</strong> setting a backup password encrypts all new <code>.abb</code> backups (section 4). JSON/SQLite/CSV exports remain unencrypted by design.</li>
+            <li><strong>Android's own app-data backup is switched off</strong> (<code>allowBackup=false</code>): the operating system is not allowed to copy the app's private database into its own cloud backup. The only copies of your data that leave the device are the ones this app makes under the rules above.</li>
             <li>The app has no screen lock or biometric lock. Your device's own lock screen is what protects the data on it. We recommend you use one.</li>
         </ul>
         <p>No method of storage or transmission is completely secure, and we cannot guarantee absolute security.</p>
