@@ -109,8 +109,14 @@
         <ul>
             <li><strong>Local database:</strong> all records are stored in a SQLite database in the app's private storage on your device. On Android, this area is not readable by other apps.</li>
             <li><strong>Backup files:</strong> the app can export your data as a backup bundle (<code>.abb</code>), a JSON file, a raw SQLite file, or CSV files.</li>
+            <li><strong>Optional backup encryption:</strong> in Settings → Backup &amp; restore you can set a <strong>backup password</strong>. When set, every new <code>.abb</code> backup bundle — local exports <em>and</em> Google Drive backups — is encrypted with <strong>AES-256-GCM</strong>, using a key derived from your password (PBKDF2, 150,000 iterations). The password itself stays in the app's private storage on your device and is never included in any backup, and is never sent to us.</li>
         </ul>
-        <p><strong>Please note:</strong> backup and export files are <strong>not encrypted or password-protected</strong>. Anyone who obtains a backup file can read everything in it, including your customers' contact details. Treat these files as confidential — store them somewhere safe, and take care when sharing them.</p>
+        <p><strong>Please note:</strong></p>
+        <ul>
+            <li>Backup encryption is <strong>off until you set a password</strong>. Without one, <code>.abb</code> backups are unencrypted, and anyone who obtains the file can read everything in it, including your customers' contact details.</li>
+            <li><strong>JSON, raw SQLite and CSV exports are always unencrypted</strong> — they exist to be readable and portable. Treat them as confidential.</li>
+            <li><strong>If you forget your backup password, encrypted backups cannot be opened — by you, by us, or by anyone.</strong> There is no recovery or reset. Keep the password somewhere safe.</li>
+        </ul>
     </div>
 
     <div class="section">
@@ -121,7 +127,7 @@
             <li><strong>We request only the <code>drive.file</code> permission.</strong> This is the narrowest Drive permission available: it lets the app see and manage <em>only the files the app itself creates</em>. The app cannot see, read or touch any other file in your Google Drive.</li>
             <li><strong>Account information we handle:</strong> your Google account email address and an access token, used solely to sign you in and upload to your Drive. These stay on your device.</li>
             <li><strong>Your control:</strong> you can back up, restore, list and delete backups from within the app, disconnect the account at any time, or delete the folder directly in Google Drive.</li>
-            <li><strong>Backup contents are not encrypted</strong> (see section 4). They are stored in your Drive under your Google account's own protection and Google's terms.</li>
+            <li><strong>Backup contents are encrypted only if you have set a backup password</strong> (see section 4). With a password set, the file uploaded to Drive is AES-256 encrypted and Google cannot read its contents; without one, it is an unencrypted archive protected only by your Google account. Either way it is stored under Google's terms.</li>
             <li>Google's handling of your Drive data is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
         </ul>
         <p><strong>Limited Use disclosure:</strong> 3D Printing Studio's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including its Limited Use requirements. We do not transfer, sell, or use Google user data for advertising, and we do not allow humans to read it.</p>
@@ -166,7 +172,8 @@
             <li><strong>App-private storage:</strong> the database lives in the app's private directory, which other apps on the device cannot read.</li>
             <li><strong>Minimal cloud permission:</strong> only <code>drive.file</code> — the app can never see the rest of your Drive.</li>
             <li><strong>No third-party analytics or trackers</strong> are embedded in the app.</li>
-            <li><strong>Backups are unencrypted</strong> (section 4), and the app has no screen lock or biometric lock. Your device's own lock screen is what protects the data on it. We recommend you use one.</li>
+            <li><strong>Optional AES-256 backup encryption:</strong> setting a backup password encrypts all new <code>.abb</code> backups (section 4). JSON/SQLite/CSV exports remain unencrypted by design.</li>
+            <li>The app has no screen lock or biometric lock. Your device's own lock screen is what protects the data on it. We recommend you use one.</li>
         </ul>
         <p>No method of storage or transmission is completely secure, and we cannot guarantee absolute security.</p>
     </div>
@@ -213,7 +220,8 @@
             <li>✅ No analytics, no tracking, no ads</li>
             <li>✅ Cloud backup is optional, goes to <em>your</em> Google Drive, and uses the narrowest possible permission</li>
             <li>✅ You can export, restore and delete everything yourself</li>
-            <li>⚠️ Backup and export files are not encrypted — keep them safe</li>
+            <li>✅ Optional backup password encrypts your .abb backups with AES-256 — with no recovery if you forget it</li>
+            <li>⚠️ Without a backup password, backups are unencrypted; CSV/JSON exports are always readable — keep them safe</li>
             <li>⚠️ You are responsible for the customer details you choose to store</li>
         </ul>
     </div>
