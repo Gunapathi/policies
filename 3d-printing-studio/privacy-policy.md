@@ -2,8 +2,8 @@
 
 **Publisher:** NETSTED (Netsted Infotech), Trichy, Tamil Nadu, India
 **Contact:** netsted.infotech@gmail.com
-**Applies to:** 3D Printing Studio version 3.3.0 and later
-**Last updated:** 30 August 2026
+**Applies to:** 3D Printing Studio version 3.4.1 and later
+**Last updated:** 11 September 2026
 
 ---
 
@@ -224,8 +224,10 @@ If you do activate:
   promotions, we do not sell or rent it, we do not share it with advertisers,
   and we do not add it to any mailing list.
 - **What is stored:** your email address, the activation's start and end dates,
-  what the activation includes, and a **device identifier** for the device the
-  activation is used on.
+  what the activation includes, a **device identifier** for the device the
+  activation is used on, that device's **name** (the make and model Android
+  reports, such as “Google Pixel 7”), when the activation was last moved to a
+  device, and how many device moves remain.
 - **About the device identifier:** it is the identifier Android itself provides
   to an app for the device it is installed on. It is specific to this app on
   this device — other apps receive a different value, so it cannot be used to
@@ -235,6 +237,12 @@ If you do activate:
 - **Why it exists:** an activation is valid for one device at a time. The
   identifier is the only way to tell "the same phone checking again" from "a
   second phone", and it is used for nothing else.
+- **About the device name:** it is the make and model your phone reports about
+  itself, and nothing more — not a name you chose, not an account name, and not
+  anything you typed. It exists so that if a second device is refused, the app
+  can tell you *which* device currently holds your activation instead of saying
+  “another device”. Millions of phones report the same model name, so it does
+  not identify you.
 - **What is not sent:** none of your business data — orders, customers,
   filament, prices, bank details or invoices — is ever transmitted during an
   activation check. Only the items listed above are.
@@ -341,7 +349,7 @@ corresponding feature:
   (subject to Google's Privacy Policy).
 - **Google Sign-In** and **Google Firebase (Firestore)** — for optional account
   activation, storing only your email address, the activation dates and what it
-  includes, and a device identifier (section 8).
+  includes, and a device identifier and device name (section 8).
 - **Your phone's address book** — read only, and only while you are using the
   contact picker (section 5).
 - **Apps you share invoices or exports through** — e.g. WhatsApp or your email
@@ -490,9 +498,15 @@ section 8.
   time does not roll over or extend.
 - **One device at a time.** An activation is tied to the first device that
   claims it. A second device is refused and falls back to the capabilities
-  available without activation. Moving your activation to a new device — after a
-  replacement, repair or reset — is a support request: email us and we will
-  release it.
+  available without activation.
+- **You can move it to a new device yourself.** After a replacement, repair or
+  reset, the new device can take the activation over from the old one from
+  inside the app — no email, no waiting. This is allowed **three times**; after
+  that, a device that has just taken the activation keeps it for **14 days**
+  before it can be moved again. The limit exists to stop one activation being
+  passed around several phones, not to make a genuine replacement difficult, and
+  we can lift it for you if you run into it — email
+  netsted.infotech@gmail.com.
 - **All payments are final and non-refundable.** Once an activation period
   has started it cannot be cancelled, paused, transferred or refunded in
   whole or in part — including for unused time, a period you forgot
@@ -670,8 +684,8 @@ deletion of an activation record or a device release:
 - Cloud backup is optional, goes to *your* Google Drive, and uses the narrowest
   possible permission.
 - Account activation is optional and sends only your email address, the
-  activation dates and a device identifier — used for registration and
-  activation reminders, never for marketing.
+  activation dates, a device identifier and the device name — used for
+  registration and activation reminders, never for marketing.
 - You can export, restore and delete everything yourself, activated or not.
 - **GST is yours to verify.** The rates, the CGST/SGST/IGST choice, the states,
   the GSTINs and every option are entered and controlled by you — check every
@@ -694,5 +708,5 @@ deletion of an activation record or a device release:
 
 ---
 
-*3D Printing Studio — Privacy Policy & Terms of Use. Last updated 30 August
+*3D Printing Studio — Privacy Policy & Terms of Use. Last updated 11 September
 2026. © NETSTED (Netsted Infotech), Trichy, Tamil Nadu, India.*

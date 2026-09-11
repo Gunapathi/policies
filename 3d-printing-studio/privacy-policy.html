@@ -73,7 +73,7 @@
 </head>
 <body>
     <h1>Privacy Policy &amp; Terms of Use for 3D Printing Studio</h1>
-    <p class="last-updated">Last Updated: August 30, 2026 &middot; Applies to 3D Printing Studio version 3.3.0 and later</p>
+    <p class="last-updated">Last Updated: September 11, 2026 &middot; Applies to 3D Printing Studio version 3.4.1 and later</p>
 
     <div class="highlight">
         <strong>Local first:</strong> 3D Printing Studio stores your business data on your own device. We operate no servers, run no analytics, and never receive a copy of your data. The only time anything leaves your device is when <em>you</em> choose to back up to your own Google Drive, share an invoice, or activate your account.
@@ -191,9 +191,10 @@
         <ul>
             <li><strong>You sign in with your own Google account.</strong> We use your Google account <strong>email address only</strong>, for two purposes: to identify which account an activation belongs to (registration), and to send you a reminder when an activation is coming to an end. It is not used for anything else.</li>
             <li><strong>We do not use it for marketing.</strong> We do not send newsletters, offers or promotions, we do not sell or rent it, we do not share it with advertisers, and we do not add it to any mailing list.</li>
-            <li><strong>What is stored:</strong> your email address, the activation's start and end dates, what the activation includes, and a <strong>device identifier</strong> for the device the activation is used on.</li>
+            <li><strong>What is stored:</strong> your email address, the activation's start and end dates, what the activation includes, a <strong>device identifier</strong> for the device the activation is used on, that device's <strong>name</strong> (the make and model Android reports, such as “Google Pixel 7”), when the activation was last moved to a device, and how many device moves remain.</li>
             <li><strong>About the device identifier:</strong> it is the identifier Android itself provides to an app for the device it is installed on. It is specific to this app on this device — other apps receive a different value, so it cannot be used to follow you across apps. It is <strong>not</strong> your phone number, IMEI, advertising ID or hardware serial number, and it carries no personal information. On a device that does not provide one, the app generates a random value instead.</li>
             <li><strong>Why it exists:</strong> an activation is valid for one device at a time. The identifier is the only way to tell "the same phone checking again" from "a second phone", and it is used for nothing else.</li>
+            <li><strong>About the device name:</strong> it is the make and model your phone reports about itself, and nothing more — not a name you chose, not an account name, and not anything you typed. It exists so that if a second device is refused, the app can tell you <em>which</em> device currently holds your activation instead of saying “another device”. Millions of phones report the same model name, so it does not identify you.</li>
             <li><strong>What is not sent:</strong> none of your business data — orders, customers, filament, prices, bank details or invoices — is ever transmitted during an activation check. Only the items listed above are.</li>
             <li><strong>Where it is stored:</strong> in Google Firebase (Firestore), operated by Google. Google's handling of it is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
             <li><strong>The narrowest sign-in available:</strong> activation asks for your basic profile and email address, and no other permission. It does not request access to your Google Drive, Gmail, contacts or any other Google service.</li>
@@ -257,7 +258,7 @@
         <p>The app uses these third-party services, and only when you choose to use the corresponding feature:</p>
         <ul>
             <li><strong>Google Sign-In</strong> and the <strong>Google Drive API</strong> — for optional cloud backup (subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>)</li>
-            <li><strong>Google Sign-In</strong> and <strong>Google Firebase (Firestore)</strong> — for optional account activation, storing only your email address, the activation dates and what it includes, and a device identifier (section 8)</li>
+            <li><strong>Google Sign-In</strong> and <strong>Google Firebase (Firestore)</strong> — for optional account activation, storing only your email address, the activation dates and what it includes, and a device identifier and device name (section 8)</li>
             <li><strong>Your phone's address book</strong> — read only, and only while you are using the contact picker (section 5)</li>
             <li><strong>Apps you share invoices or exports through</strong> — e.g. WhatsApp or your email client (subject to their own privacy policies)</li>
         </ul>
@@ -337,7 +338,8 @@
         <ul>
             <li><strong>The app is free to install and use.</strong> Activation unlocks additional capabilities. There is no purchase inside the app.</li>
             <li><strong>Periods run on the calendar, not on usage.</strong> An activation covers a fixed period and runs to the <strong>end of its final day</strong> — not to the clock time it was activated at. It continues to run whether or not you open the app, and unused time does not roll over or extend.</li>
-            <li><strong>One device at a time.</strong> An activation is tied to the first device that claims it. A second device is refused and falls back to the capabilities available without activation. Moving your activation to a new device — after a replacement, repair or reset — is a support request: email us and we will release it.</li>
+            <li><strong>One device at a time.</strong> An activation is tied to the first device that claims it. A second device is refused and falls back to the capabilities available without activation.</li>
+            <li><strong>You can move it to a new device yourself.</strong> After a replacement, repair or reset, the new device can take the activation over from the old one from inside the app — no email, no waiting. This is allowed <strong>three times</strong>; after that, a device that has just taken the activation keeps it for <strong>14 days</strong> before it can be moved again. The limit exists to stop one activation being passed around several phones, not to make a genuine replacement difficult, and we can lift it for you if you run into it — email netsted.infotech@gmail.com.</li>
             <li><strong>All payments are final and non-refundable.</strong> Once an activation period has started it cannot be cancelled, paused, transferred or refunded in whole or in part — including for unused time, a period you forgot to use, a device you no longer own, or a change to what activation includes. Nothing here affects any refund right you have under applicable law, or under the terms of any store you obtained a period through.</li>
             <li><strong>We record when your activation began and when it ends</strong>, so that both of us can see the same thing.</li>
             <li><strong>What we provide is activation, and only activation.</strong> We do not host, store, process or have access to your business records at any point.</li>
@@ -438,7 +440,7 @@
             <li>&#9989; No analytics, no tracking, no ads</li>
             <li>&#9989; Contacts are read only when you use the importer, copied not linked, and never written to</li>
             <li>&#9989; Cloud backup is optional, goes to <em>your</em> Google Drive, and uses the narrowest possible permission</li>
-            <li>&#9989; Account activation is optional and sends only your email address, the activation dates and a device identifier — used for registration and activation reminders, never for marketing</li>
+            <li>&#9989; Account activation is optional and sends only your email address, the activation dates, a device identifier and the device name — used for registration and activation reminders, never for marketing</li>
             <li>&#9989; You can export, restore and delete everything yourself, activated or not</li>
             <li>&#9888;&#65039; <strong>GST is yours to verify.</strong> The rates, the CGST/SGST/IGST choice, the states, the GSTINs and every option are entered and controlled by you — check every invoice before you issue it. The publisher is not responsible for tax figures, or for changes in tax law (section 18)</li>
             <li>&#9888;&#65039; Prices, profit, margin and stock figures are calculated from what you entered — verify anything you rely on (section 19)</li>
