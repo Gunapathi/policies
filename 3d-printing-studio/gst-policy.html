@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Policy - 3D Printing Studio</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1976D2;
+            border-bottom: 3px solid #1976D2;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #424242;
+            margin-top: 30px;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .contact {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .highlight {
+            background: #E3F2FD;
+            padding: 15px;
+            border-left: 4px solid #1976D2;
+            margin: 20px 0;
+        }
+        .notice {
+            background: #FFF8E1;
+            padding: 15px;
+            border-left: 4px solid #F9A825;
+            margin: 20px 0;
+        }
+        .alert {
+            background: #FFEBEE;
+            padding: 15px;
+            border-left: 4px solid #C62828;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>GST Policy for 3D Printing Studio</h1>
+    <p class="last-updated">Last Updated: September 18, 2026 &middot; Applies to 3D Printing Studio version 3.5.3 and later</p>
+
+    <div class="highlight">
+        <strong>This is a short summary, written for the moment you switch GST on.</strong> The full and binding terms are <strong>section 18 of the <a href="privacy-policy.html">Privacy Policy &amp; Terms of Use</a></strong> — <em>"GST and tax figures — you must verify them"</em>. Where this page and section 18 differ, <strong>section 18 applies</strong>. Nothing here replaces it, narrows it or adds to it.
+    </div>
+
+    <div class="section">
+        <h2>1. The figures on your invoice are yours</h2>
+        <p>3D Printing Studio does arithmetic on the values <strong>you</strong> type in. It does not look anything up, does not connect to any tax portal, and does not check anything with any tax authority.</p>
+        <p>You enter, and you are responsible for:</p>
+        <ul>
+            <li>your <strong>GSTIN</strong>, your business name, address and state</li>
+            <li>the <strong>CGST, SGST and IGST percentages</strong></li>
+            <li>whether GST applies to a given order at all</li>
+            <li>your customer's GSTIN, the place of supply and the ship-to address</li>
+            <li>the HSN / SAC values, the discount, the margin and every charge line</li>
+        </ul>
+        <p>The app compares your state with the place of supply to decide whether tax is split as <strong>CGST + SGST</strong> or charged as <strong>IGST</strong>. If either value is missing, wrong or out of date, that split will be wrong, and the app has no way to know.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. What the app checks, and what that check is not</h2>
+        <p>From version 3.5.3 the app will not let you switch GST on until it has a GSTIN that is <em>shaped</em> like a GSTIN, a business name, an address, a state, and at least one rate above zero. It also checks that the first two digits of your GSTIN match the state you selected.</p>
+        <div class="alert">
+            <strong>This is a completeness check, not a verification.</strong> It confirms the fields are filled and internally consistent. It does <strong>not</strong> confirm that the GSTIN is real, that it is yours, that it is active, or that the rate you entered is the right rate for what you sell. A GSTIN that is well-formed and wrong will pass.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Invoice numbering</h2>
+        <p>Documents are numbered in two consecutive series per financial year — one for tax invoices and one for documents that carry no GST — in the format <code>GST/2627/00001</code>, within the sixteen characters Rule 46(b) allows.</p>
+        <p><strong>What a non-GST document is called is your choice</strong>, set in <strong>Settings &rarr; Orders</strong>. Under Rule 49 a <em>Bill of Supply</em> is a registered person's document, for exempt, nil-rated or non-taxable supplies, or under the composition scheme. The app cannot tell which of those applies to you, so it offers a sensible default and leaves the decision to you and your accountant.</p>
+        <p>A serial, once issued, never changes. Cancelling an order does not release its number — gaps in a series are normal, and a cancelled invoice is answered with a credit note, not by reusing the number.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. Before you send anything</h2>
+        <ul>
+            <li><strong>Check every invoice</strong> — the taxable value, the tax split, the rate, the place of supply, both GSTINs, the round-off and the total.</li>
+            <li>Satisfy yourself it meets what the law requires of a tax invoice, including its numbering and sequence.</li>
+            <li>Keep your rates and details current. The app keeps using what you last entered.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>5. Responsibility</h2>
+        <div class="notice">
+            <strong>The publisher is not responsible</strong> for tax charged, collected, omitted, split, reported or printed by the app; for changes in GST law, rates or filing requirements; or for any consequence of a wrong figure — including penalties, interest, demands, notices, assessments, denied or reversed input tax credit, rejected invoices or disputes with customers. Those values are under your sole control.
+        </div>
+        <p><strong>This app is not tax, legal or accounting advice.</strong> It is not accounting software, it is not a return-filing tool, and it does not replace a qualified professional. If you are unsure how tax applies to your business, consult a chartered accountant or tax adviser.</p>
+        <p>The full terms are in <strong>section 18</strong> of the <a href="privacy-policy.html">Privacy Policy &amp; Terms of Use</a>.</p>
+    </div>
+
+    <div class="contact">
+        <strong>NETSTED</strong> (Netsted Infotech), Trichy, Tamil Nadu, India<br>
+        <a href="mailto:netsted.infotech@gmail.com">netsted.infotech@gmail.com</a>
+    </div>
+</body>
+</html>
