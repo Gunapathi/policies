@@ -3,7 +3,7 @@
 **Publisher:** NETSTED (Netsted Infotech), Trichy, Tamil Nadu, India
 **Contact:** netsted.infotech@gmail.com
 **Applies to:** 3D Printing Studio version 3.4.1 and later
-**Last updated:** 11 September 2026
+**Last updated:** 22 September 2026
 
 ---
 
@@ -211,8 +211,44 @@ for advertising, and we do not allow humans to read it.
 ## 8. Account activation (optional)
 
 Some features of the app are unlocked by activating your account. Activation is
-optional — the app is fully usable without it, and until you choose to activate,
-this section does not apply to you and no activation data leaves your device.
+optional — the app is fully usable without it.
+
+Two separate things are described here, and **neither happens on its own**:
+*asking us to set an account up*, and *using an activation once you have one*.
+Until you choose to do one of them, no activation data leaves your device.
+
+### 8a. Asking us to set an account up
+
+Settings offers a **Request account activation** option. Tapping it opens a
+**Google Form** in your browser. Nothing is sent unless you fill that form in
+and submit it yourself — opening it sends nothing, and closing it sends nothing.
+
+- **What the form asks for:** your **email address** (required, so we can reply)
+  and, entirely optionally, your studio name, a phone number and a message. You
+  choose what to put in the optional fields, including nothing at all.
+- **What it is used for:** replying to you and setting up your activation. That
+  is all. It is not used for marketing, we do not add it to a mailing list, and
+  we do not sell, rent or share it with advertisers.
+- **Where it goes:** the form is a **Google Form**, and the answers arrive in a
+  **Google Sheet** that we control. Google's handling of the form and the sheet
+  is governed by Google's Privacy Policy (https://policies.google.com/privacy).
+- **No business data is included.** The form cannot reach your orders,
+  customers, filament, prices, bank details or invoices, and none of it is
+  attached to what you submit.
+- **You do not need an account to use it**, and using it does not create one.
+  Submitting the form is a message to us, not a registration.
+- **If a future version of the app collects this in the app itself** rather than
+  in a browser, it will also send your **device identifier**, your device's
+  **name** (make and model) and the **app version**, so that we can set the
+  activation up for the right device without asking you for it. In that case the
+  app shows you exactly what it is about to send, on screen, before you send it.
+  The device identifier and device name are described under *About the device
+  identifier* and *About the device name* below.
+- **How long it is kept:** for as long as it takes to deal with your request,
+  plus a period afterwards for support and renewal. You can ask us to delete it
+  at any time by emailing netsted.infotech@gmail.com.
+
+### 8b. Using an activation
 
 If you do activate:
 
@@ -686,6 +722,9 @@ deletion of an activation record or a device release:
 - Account activation is optional and sends only your email address, the
   activation dates, a device identifier and the device name — used for
   registration and activation reminders, never for marketing.
+- Asking us to set an account up opens a Google Form in your browser. It sends
+  what you type into it — your email, and anything optional you choose to add —
+  and nothing else.
 - You can export, restore and delete everything yourself, activated or not.
 - **GST is yours to verify.** The rates, the CGST/SGST/IGST choice, the states,
   the GSTINs and every option are entered and controlled by you — check every
@@ -708,5 +747,5 @@ deletion of an activation record or a device release:
 
 ---
 
-*3D Printing Studio — Privacy Policy & Terms of Use. Last updated 11 September
+*3D Printing Studio — Privacy Policy & Terms of Use. Last updated 22 September
 2026. © NETSTED (Netsted Infotech), Trichy, Tamil Nadu, India.*
