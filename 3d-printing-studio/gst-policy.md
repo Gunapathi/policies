@@ -3,7 +3,7 @@
 **Publisher:** NETSTED (Netsted Infotech), Trichy, Tamil Nadu, India
 **Contact:** netsted.infotech@gmail.com
 **Applies to:** 3D Printing Studio version 3.5.3 and later
-**Last updated:** 18 September 2026
+**Last updated:** 28 September 2026
 
 ---
 
@@ -28,6 +28,10 @@ You enter, and you are responsible for:
 - whether GST applies to a given order at all
 - your customer's GSTIN, the place of supply and the ship-to address
 - the HSN / SAC values, the discount, the margin and every charge line
+- any **settlement discount** you record when a customer pays less than the
+  invoice total — the app leaves the invoice's taxable value and tax as they
+  were issued; whether your law wants a credit note or a reduced value
+  instead is for you and your adviser
 
 The app compares your state with the place of supply to decide whether tax is
 split as **CGST + SGST** or charged as **IGST**. If either value is missing,
