@@ -3,7 +3,7 @@
 **Publisher:** NETSTED (Netsted Infotech), Trichy, Tamil Nadu, India
 **Contact:** netsted.infotech@gmail.com
 **Applies to:** 3D Printing Studio version 3.5.3 and later
-**Last updated:** 28 September 2026
+**Last updated:** 30 September 2026
 
 ---
 
@@ -32,6 +32,9 @@ You enter, and you are responsible for:
   invoice total — the app leaves the invoice's taxable value and tax as they
   were issued; whether your law wants a credit note or a reduced value
   instead is for you and your adviser
+- any **refund** you record — the app leaves the issued invoice as it is and
+  produces no credit note; whether your law wants one is for you and your
+  adviser
 
 The app compares your state with the place of supply to decide whether tax is
 split as **CGST + SGST** or charged as **IGST**. If either value is missing,

@@ -73,7 +73,7 @@
 </head>
 <body>
     <h1>Privacy Policy &amp; Terms of Use for 3D Printing Studio</h1>
-    <p class="last-updated">Last Updated: September 28, 2026 &middot; Applies to 3D Printing Studio version 3.4.1 and later</p>
+    <p class="last-updated">Last Updated: September 30, 2026 &middot; Applies to 3D Printing Studio version 3.4.1 and later</p>
 
     <div class="highlight">
         <strong>Local first:</strong> 3D Printing Studio stores your business data on your own device. We operate no servers, run no analytics, and never receive a copy of your data. The only time anything leaves your device is when <em>you</em> choose to back up to your own Google Drive, share an invoice, or activate your account.
@@ -95,8 +95,8 @@
         <p>The app is a business tool for 3D-printing makers. It stores the following in a database in the app's private storage on your device:</p>
         <ul>
             <li><strong>Customer records you enter:</strong> name, phone number (with country code), email address, postal address, notes, and — if you use tax invoicing — the customer's GSTIN, state and PIN code</li>
-            <li><strong>Order records:</strong> order numbers, customer name and contact, line items, prices, discounts, advances, balances, the amount actually received, any <strong>settlement discount</strong> (what you let go when a customer paid less than the total), any <strong>unpaid loss</strong> (what was still owed when you marked the order fully completed) and when it was marked, payment mode, payment and refund status, printer / packing / post-processing / delivery charges, profit margin, the GST recorded on the order (CGST, SGST or IGST and the place of supply), any separate ship-to address, and the order's history log</li>
-            <li><strong>Money flow:</strong> a dated record of every advance, payment, settlement discount and unpaid loss on your orders, with the payment mode — built on your device from your order records, and carried in your backups like everything else</li>
+            <li><strong>Order records:</strong> order numbers, customer name and contact, line items, prices, discounts, advances, balances, the amount actually received, any <strong>settlement discount</strong> (what you let go when a customer paid less than the total), any <strong>unpaid loss</strong> (what was still owed when you marked the order fully completed) and when it was marked, payment mode, payment and refund status, any <strong>refund</strong> (its reason, the amount paid back, and how and when it was paid back), whether money taken on a cancelled order was refunded or kept, printer / packing / post-processing / delivery charges, profit margin, the GST recorded on the order (CGST, SGST or IGST and the place of supply), any separate ship-to address, and the order's history log</li>
+            <li><strong>Money flow:</strong> a dated record of every advance, payment, settlement discount, unpaid loss and refund on your orders, with the payment mode — built on your device from your order records, and carried in your backups like everything else</li>
             <li><strong>Invoice snapshots:</strong> when an order is created, the business details its invoice will print are frozen onto that order, so a document you have already issued cannot be rewritten later by changing a setting</li>
             <li><strong>Filament inventory:</strong> brands, types, colours, weights, spool counts, cost and sell rates, stock purchases and stock movements</li>
             <li><strong>Products:</strong> your catalogue of finished goods</li>
@@ -319,6 +319,7 @@
             <li><strong>Your GSTIN, your customer's GSTIN, the place of supply, the ship-to address, the HSN/SAC values, the invoice number series and prefix, the round-off, the discount, the margin and every charge line</strong> — all entered and controlled by you.</li>
             <li><strong>What is taxed.</strong> The app applies your rate to the pre-tax total, packing and delivery charges included. Whether that is the correct treatment for your business is a question for you and your tax adviser, not for the app.</li>
             <li><strong>A settlement discount does not change the tax.</strong> When you record that a customer paid less than the invoice total, the app keeps the invoice's taxable value and tax as they were issued, and prints the difference as a settlement discount. Whether your law requires something else — a credit note, or a reduced taxable value — is for you and your tax adviser to decide.</li>
+            <li><strong>A refund does not change the tax either.</strong> When you record a refund, the app leaves the invoice exactly as it was issued and does not produce a credit note or a revised invoice. Whether your law requires one is for you and your tax adviser to decide.</li>
         </ul>
         <p><strong>What the app does is arithmetic on the values you supply.</strong> It does not know your registration status, your turnover, your place of business, your customer's status, which rate or exemption applies to what you sell, or how the law has changed since the version you are running was released.</p>
         <p><strong>Your responsibility, before you issue anything:</strong></p>
@@ -333,7 +334,7 @@
 
     <div class="section">
         <h2>19. Other Figures the App Calculates</h2>
-        <p>The same principle applies to everything else the app works out for you — pricing, printer running cost, packing, post-processing and delivery charges, discounts, profit and margin (including profit after settlement discounts and unpaid losses), filament consumption and stock levels, the investment ledger, the money flow, and the analytics screen.</p>
+        <p>The same principle applies to everything else the app works out for you — pricing, printer running cost, packing, post-processing and delivery charges, discounts, profit and margin (including profit after settlement discounts, unpaid losses and refunds, and revenue after refunds), filament consumption and stock levels, the investment ledger, the money flow, and the analytics screen.</p>
         <ul>
             <li>Every one of those is derived from rates, weights, hours, costs and options <strong>you</strong> entered. A wrong input produces a wrong result, quietly and confidently.</li>
             <li>They are provided for your own convenience and internal use. <strong>Verify anything you rely on for a commercial decision, a quotation, a bill or a filing.</strong></li>
@@ -459,7 +460,7 @@
             <li>&#9989; Asking us to set an account up opens a Google Form in your browser. It sends what you type into it — your email, and anything optional you choose to add — and nothing else</li>
             <li>&#9989; You can export, restore and delete everything yourself, activated or not</li>
             <li>&#9888;&#65039; <strong>GST is yours to verify.</strong> The rates, the CGST/SGST/IGST choice, the states, the GSTINs and every option are entered and controlled by you — check every invoice before you issue it. The publisher is not responsible for tax figures, or for changes in tax law (section 18)</li>
-            <li>&#9888;&#65039; Prices, profit, margin, stock, settlement discounts, unpaid losses and the money flow are calculated from what you entered — verify anything you rely on (section 19). A settlement discount leaves the invoice's tax as issued (section 18)</li>
+            <li>&#9888;&#65039; Prices, profit, margin, stock, settlement discounts, unpaid losses, refunds and the money flow are calculated from what you entered — verify anything you rely on (section 19). A settlement discount or a refund leaves the invoice's tax as issued (section 18)</li>
             <li>&#9888;&#65039; <strong>Back up before every update</strong>, keep a local copy and a Drive copy, and test a restore now and then — we hold no copy and cannot recover your data for you (section 24)</li>
             <li>&#9888;&#65039; A forgotten backup password cannot be recovered; CSV/JSON exports are always readable — keep them safe</li>
             <li>&#9888;&#65039; You are responsible for the customer details you choose to store</li>

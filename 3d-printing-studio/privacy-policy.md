@@ -3,7 +3,7 @@
 **Publisher:** NETSTED (Netsted Infotech), Trichy, Tamil Nadu, India
 **Contact:** netsted.infotech@gmail.com
 **Applies to:** 3D Printing Studio version 3.4.1 and later
-**Last updated:** 28 September 2026
+**Last updated:** 30 September 2026
 
 ---
 
@@ -43,12 +43,15 @@ database in the app's private storage on your device:
   **settlement discount** (what you let go when a customer paid less than the
   total), any **unpaid loss** (what was still owed when you marked the order
   fully completed) and when it was marked, payment mode, payment and refund
-  status, printer / packing / post-processing / delivery charges, profit
-  margin, the GST recorded on the order (CGST, SGST or IGST and the place of
-  supply), any separate ship-to address, and the order's history log.
-- **Money flow:** a dated record of every advance, payment, settlement discount
-  and unpaid loss on your orders, with the payment mode — built on your device
-  from your order records, and carried in your backups like everything else.
+  status, any **refund** (its reason, the amount paid back, and how and when it
+  was paid back), whether money taken on a cancelled order was refunded or
+  kept, printer / packing / post-processing / delivery charges, profit margin,
+  the GST recorded on the order (CGST, SGST or IGST and the place of supply),
+  any separate ship-to address, and the order's history log.
+- **Money flow:** a dated record of every advance, payment, settlement
+  discount, unpaid loss and refund on your orders, with the payment mode —
+  built on your device from your order records, and carried in your backups
+  like everything else.
 - **Invoice snapshots:** when an order is created, the business details its
   invoice will print are frozen onto that order, so a document you have already
   issued cannot be rewritten later by changing a setting.
@@ -475,6 +478,10 @@ The app can put GST on an order and print a tax invoice. Every part of that is
   taxable value and tax as they were issued, and prints the difference as a
   settlement discount. Whether your law requires something else — a credit
   note, or a reduced taxable value — is for you and your tax adviser to decide.
+- **A refund does not change the tax either.** When you record a refund, the
+  app leaves the invoice exactly as it was issued and does not produce a
+  credit note or a revised invoice. Whether your law requires one is for you
+  and your tax adviser to decide.
 
 **What the app does is arithmetic on the values you supply.** It does not know
 your registration status, your turnover, your place of business, your customer's
@@ -511,9 +518,9 @@ chartered accountant or tax adviser.
 
 The same principle applies to everything else the app works out for you —
 pricing, printer running cost, packing, post-processing and delivery charges,
-discounts, profit and margin (including profit after settlement discounts and
-unpaid losses), filament consumption and stock levels, the investment ledger,
-the money flow, and the analytics screen.
+discounts, profit and margin (including profit after settlement discounts,
+unpaid losses and refunds, and revenue after refunds), filament consumption and
+stock levels, the investment ledger, the money flow, and the analytics screen.
 
 - Every one of those is derived from rates, weights, hours, costs and options
   **you** entered. A wrong input produces a wrong result, quietly and
@@ -744,10 +751,10 @@ deletion of an activation record or a device release:
   the GSTINs and every option are entered and controlled by you — check every
   invoice before you issue it. The publisher is not responsible for tax figures,
   or for changes in tax law (section 18).
-- Prices, profit, margin, stock, settlement discounts, unpaid losses and the
-  money flow are calculated from what you entered — verify anything you rely
-  on (section 19). A settlement discount leaves the invoice's tax as issued
-  (section 18).
+- Prices, profit, margin, stock, settlement discounts, unpaid losses, refunds
+  and the money flow are calculated from what you entered — verify anything you
+  rely on (section 19). A settlement discount or a refund leaves the invoice's
+  tax as issued (section 18).
 - **Back up before every update**, keep a local copy and a Drive copy, and test a
   restore now and then — we hold no copy and cannot recover your data for you
   (section 24).
@@ -763,5 +770,5 @@ deletion of an activation record or a device release:
 
 ---
 
-*3D Printing Studio — Privacy Policy & Terms of Use. Last updated 28 September
+*3D Printing Studio — Privacy Policy & Terms of Use. Last updated 30 September
 2026. © NETSTED (Netsted Infotech), Trichy, Tamil Nadu, India.*
