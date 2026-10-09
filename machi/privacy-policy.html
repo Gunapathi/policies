@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Machi</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1976D2;
+            border-bottom: 3px solid #1976D2;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #424242;
+            margin-top: 30px;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: #f5f5f5;
+        }
+        code {
+            background: #f5f5f5;
+            padding: 1px 4px;
+            border-radius: 3px;
+        }
+        .contact {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .highlight {
+            background: #E3F2FD;
+            padding: 15px;
+            border-left: 4px solid #1976D2;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Machi — Privacy Policy</h1>
+    <p class="last-updated">Last Updated: October 9, 2026</p>
+
+    <div class="highlight">
+        <strong>Privacy first:</strong> Machi talks to your own Machi desk buddy over Bluetooth, straight from your phone. There is no account, no ads and no analytics, and nothing is sent to our servers: we don't run any. The only thing that goes to the internet is an approximate location for the weather, and only if you switch the weather on.
+    </div>
+
+    <p>This policy covers the Machi Android app (package <code>com.netstedinfotech.machi</code>), published by NETSTED. It is kept in the same place as the Markdown version of this page; the two are always updated together.</p>
+
+    <div class="section">
+        <h2>1. What Machi is</h2>
+        <p>Machi is the companion app for the Machi desk buddy, a small device with a screen that you own and pair with your phone. The app sends things from your phone to the buddy so it can show them, and controls what the buddy does.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Notifications and calls</h2>
+        <p>With your permission (Android's <strong>Notification access</strong>), the app reads the notifications your phone receives:</p>
+        <ul>
+            <li>Only notifications from the apps you switch on in the app reach the buddy. You choose them, and you can switch them all off.</li>
+            <li>What goes to the buddy: the app's name, the sender or title, and the message text, cut to a short length. With <strong>Hide message text</strong> on, the buddy gets "New message" instead of the text.</li>
+            <li>An incoming call's notification sends the caller's name, so the buddy can show the call.</li>
+            <li>The app's <strong>Recent</strong> list shows the last 30 notifications it saw, with the app, the title and what happened. It never keeps the message text. The list lives in the app's memory and is gone when the app stops.</li>
+            <li>Notifications are never sent anywhere except to your own buddy.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. The Bluetooth link to your buddy</h2>
+        <ul>
+            <li>The app pairs with your buddy through Android's companion device pairing (you pick it on a system screen, or scan the QR code on its display).</li>
+            <li>Over this link the app sends:
+                <ul>
+                    <li>your notifications and calls (as above);</li>
+                    <li>the time and time zone, and your phone's battery level;</li>
+                    <li>the weather (if on);</li>
+                    <li>your alarms, notes, stopwatch and timer commands;</li>
+                    <li>the buddy's settings.</li>
+                </ul>
+            </li>
+            <li>The buddy sends back:
+                <ul>
+                    <li>its status and settings;</li>
+                    <li>when you choose to see it, a live copy of its screen, which the app shows and never stores.</li>
+                </ul>
+            </li>
+            <li>The link is direct between your phone and your buddy; no server is involved. It is not encrypted yet (encrypted pairing is planned), so a nearby device with special tools could in principle read it. Use <strong>Hide message text</strong> if that matters to you.</li>
+            <li>The app keeps your buddy's Bluetooth address on your phone, to reconnect to it.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Location and weather (optional, off by default)</h2>
+        <ul>
+            <li>Only if you switch <strong>Weather</strong> on, the app asks for your <strong>approximate</strong> location (never precise), and only reads it while the app is open.</li>
+            <li>The approximate coordinates are sent to <strong>Open-Meteo</strong> (<code>api.open-meteo.com</code>) to get the local forecast, roughly every 30 minutes. Open-Meteo is a free weather service; its privacy policy is at <a href="https://open-meteo.com/en/terms" target="_blank">open-meteo.com</a>.</li>
+            <li>Android's built-in Geocoder turns the coordinates into a city name to show on the buddy.</li>
+            <li>The last coordinates, city and forecast are kept on your phone so the weather keeps updating. Switching Weather off stops all of this.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>5. What is stored on your phone</h2>
+        <p>Only on your phone, in the app's private storage:</p>
+        <ul>
+            <li>your settings (buddy settings, theme, which apps may reach the buddy, notification options);</li>
+            <li>your alarms (time, days and label);</li>
+            <li>the paired buddy's address and when it was last seen;</li>
+            <li>the last weather (if on).</li>
+        </ul>
+        <p>We have no copy of any of it.</p>
+    </div>
+
+    <div class="section">
+        <h2>6. Backups (your choice)</h2>
+        <p><strong>Backup</strong> writes your settings and alarms to a file you choose with Android's file picker (for example your Downloads or your own cloud drive). <strong>Restore</strong> reads such a file back. We never see these files.</p>
+    </div>
+
+    <div class="section">
+        <h2>7. The debug log (only if you share it)</h2>
+        <p>For troubleshooting, the app keeps the last 200 link events in memory. They include the messages sent to the buddy, so they can include notification text. The log is gone when the app stops, and it leaves your phone only if you tap <strong>Share debug log</strong> and pick where to send it.</p>
+    </div>
+
+    <div class="section">
+        <h2>8. Pairing QR scanner</h2>
+        <p>Scanning the buddy's QR code uses <strong>Google Code Scanner</strong>, which runs inside Google Play services. The app gets only the scanned link, needs no camera permission, and never sees the camera image. Google's privacy policy applies to Play services: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>.</p>
+    </div>
+
+    <div class="section">
+        <h2>9. Permissions the app asks for</h2>
+        <table>
+            <tr><th>Permission</th><th>Why</th></tr>
+            <tr><td>Nearby devices (Bluetooth)</td><td>To connect to your buddy</td></tr>
+            <tr><td>Notifications</td><td>To show the app's own status notification and the alarm</td></tr>
+            <tr><td>Notification access</td><td>To forward the notifications you choose to your buddy</td></tr>
+            <tr><td>Companion device, run in the background, connected-device service</td><td>To keep the link to your buddy while the app is closed</td></tr>
+            <tr><td>Ignore battery optimisation</td><td>So Android doesn't cut the link to save power</td></tr>
+            <tr><td>Run at startup</td><td>To reconnect to your buddy after the phone restarts</td></tr>
+            <tr><td>Alarms and reminders (exact alarms)</td><td>So your phone rings at the exact time an alarm is set for</td></tr>
+            <tr><td>Approximate location</td><td>Only for the weather, only if you switch it on</td></tr>
+            <tr><td>Internet</td><td>Only for the weather</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>10. What we don't do</h2>
+        <ul>
+            <li>No account and no sign-in</li>
+            <li>No ads, no analytics, no crash reporting, no tracking</li>
+            <li>No servers of ours: none of your data reaches us</li>
+            <li>We never sell, rent or share your data</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>11. Keeping and deleting your data</h2>
+        <ul>
+            <li><strong>On your phone:</strong> everything stays until you change it, use <strong>Forget buddy</strong> (removes the pairing), clear the app's data, or uninstall the app, which deletes it all.</li>
+            <li><strong>On your buddy:</strong> the buddy keeps its own settings, alarms and current note in its memory until they are changed or the device is reset.</li>
+            <li><strong>With us:</strong> nothing to delete; we don't hold any of your data.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>12. Children</h2>
+        <p>Machi is not intended for children under 13, and we do not knowingly collect any data from children.</p>
+    </div>
+
+    <div class="section">
+        <h2>13. Changes to this policy</h2>
+        <p>When a new feature changes what the app uses or sends, this page is updated, with a new "Last Updated" date, before that version of the app is released. For example, a planned feature for sending a partner's emoji to your buddy over the internet will need accounts, and this policy will describe it first.</p>
+    </div>
+
+    <div class="contact">
+        <h2>Contact</h2>
+        <p>Questions about this policy or your data:</p>
+        <p>
+            <strong>Developer:</strong> NETSTED<br>
+            <strong>Email:</strong> <a href="mailto:netsted.infotech@gmail.com">netsted.infotech@gmail.com</a><br>
+            <strong>Location:</strong> Trichy, Tamil Nadu, India
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Summary</h2>
+        <ul>
+            <li>✅ Talks only to your own buddy, over Bluetooth</li>
+            <li>✅ Only the notifications from apps you choose; message text can be hidden</li>
+            <li>✅ Approximate location only for the optional weather, sent to Open-Meteo</li>
+            <li>✅ No account, no ads, no analytics, no servers of ours</li>
+            <li>✅ Uninstalling deletes everything the app stored</li>
+        </ul>
+    </div>
+</body>
+</html>
