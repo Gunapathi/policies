@@ -33,7 +33,9 @@ phone receives:
   gone when the app stops.
 - **Partners (optional):** you can list up to 5 people by name. When one of them sends a
   message that is only an emoji (like ❤️), the buddy shows that emoji big, with their name,
-  instead of a normal card. Their names are stored with your settings. If your buddy isn't
+  instead of a normal card. Their names are stored with your settings. You can type a name or
+  pick one with Android's own contact picker: the app then gets only the name of the contact you
+  pick, and has no access to your other contacts (it doesn't ask for the contacts permission). If your buddy isn't
   connected, the app holds that one emoji and name in memory and sends it when the buddy
   reconnects, for up to 24 hours.
 - Notifications are never sent anywhere except to your own buddy.
