@@ -1,6 +1,6 @@
 # Machi — Privacy Policy
 
-**Last Updated: October 9, 2026**
+**Last Updated: October 10, 2026**
 
 > **Privacy first:** Machi talks to your own Machi desk buddy over Bluetooth, straight from your
 > phone. There is no account, no ads and no analytics, and nothing is sent to our servers: we
@@ -31,6 +31,11 @@ phone receives:
 - The app's **Recent** list shows the last 30 notifications it saw, with the app, the title and
   what happened. It never keeps the message text. The list lives in the app's memory and is
   gone when the app stops.
+- **Partners (optional):** you can list up to 5 people by name. When one of them sends a
+  message that is only an emoji (like ❤️), the buddy shows that emoji big, with their name,
+  instead of a normal card. Their names are stored with your settings. If your buddy isn't
+  connected, the app holds that one emoji and name in memory and sends it when the buddy
+  reconnects, for up to 24 hours.
 - Notifications are never sent anywhere except to your own buddy.
 
 ## 3. The Bluetooth link to your buddy
@@ -66,7 +71,8 @@ phone receives:
 
 Only on your phone, in the app's private storage:
 
-- your settings (buddy settings, theme, which apps may reach the buddy, notification options);
+- your settings (buddy settings, theme, which apps may reach the buddy, your partners'
+  names, notification options);
 - your alarms (time, days and label);
 - the paired buddy's address and when it was last seen;
 - the last weather (if on).
@@ -130,9 +136,8 @@ children.
 ## 13. Changes to this policy
 
 When a new feature changes what the app uses or sends, this page is updated, with a new
-"Last Updated" date, before that version of the app is released. For example, a planned
-feature for sending a partner's emoji to your buddy over the internet will need accounts, and
-this policy will describe it first.
+"Last Updated" date, before that version of the app is released. For example, if the app ever
+sends anything through a server of ours or adds accounts, this policy will describe it first.
 
 ## Contact
 
