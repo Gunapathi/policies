@@ -32,8 +32,10 @@ phone receives:
   what happened. It never keeps the message text. The list lives in the app's memory and is
   gone when the app stops.
 - **Partners (optional):** you can list up to 5 people by name. When one of them sends a
-  message that is only an emoji (like ❤️), the buddy shows that emoji big, with their name,
-  instead of a normal card. Their names are stored with your settings. You can type a name or
+  message that is only an emoji (like ❤️), the buddy shows a cartoon face making that emoji,
+  with their name, instead of a normal card. You can choose each partner's gender (female, male
+  or not set) so the face looks right; names and genders are stored with your settings, and the
+  gender goes to your buddy with each ping. You can type a name or
   pick one with Android's own contact picker: the app then gets only the name of the contact you
   pick, and has no access to your other contacts (it doesn't ask for the contacts permission). If your buddy isn't
   connected, the app holds that one emoji and name in memory and sends it when the buddy
@@ -74,7 +76,7 @@ phone receives:
 Only on your phone, in the app's private storage:
 
 - your settings (buddy settings, theme, which apps may reach the buddy, your partners'
-  names, notification options);
+  names and genders, notification options);
 - your alarms (time, days and label);
 - the paired buddy's address and when it was last seen;
 - the last weather (if on).
