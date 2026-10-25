@@ -70,7 +70,7 @@
 </head>
 <body>
     <h1>Machi — Privacy Policy</h1>
-    <p class="last-updated">Last Updated: October 10, 2026</p>
+    <p class="last-updated">Last Updated: October 25, 2026</p>
 
     <div class="highlight">
         <strong>Privacy first:</strong> Machi talks to your own Machi desk buddy over Bluetooth, straight from your phone. There is no account, no ads and no analytics, and nothing is sent to our servers: we don't run any. The only thing that goes to the internet is an approximate location for the weather, and only if you switch the weather on.
@@ -80,7 +80,7 @@
 
     <div class="section">
         <h2>1. What Machi is</h2>
-        <p>Machi is the companion app for the Machi desk buddy, a small device with a screen that you own and pair with your phone. The app sends things from your phone to the buddy so it can show them, and controls what the buddy does.</p>
+        <p>Machi is the companion app for the Machi desk buddy, a small device with a screen that you own and pair with your phone. The app sends things from your phone to the buddy so it can show them, and controls what the buddy does. It also drives Machi's robots, if you have one: the rover and COBOT (a four-legged robot).</p>
     </div>
 
     <div class="section">
@@ -118,6 +118,14 @@
             <li>The link is direct between your phone and your buddy; no server is involved. It is not encrypted yet (encrypted pairing is planned), so a nearby device with special tools could in principle read it. Use <strong>Hide message text</strong> if that matters to you.</li>
             <li>The app keeps your buddy's Bluetooth address on your phone, to reconnect to it.</li>
         </ul>
+        <h3>Your robots (optional): the rover and COBOT</h3>
+        <ul>
+            <li>The app pairs a robot the same way: Android's device screen, or the QR code on COBOT's display.</li>
+            <li>It links to a robot only while that robot's page is open in the app, and sends it only what you tap: driving or walking commands, its moves and face, and for COBOT its calibration (each leg's trim and direction, which COBOT keeps).</li>
+            <li>A robot sends back only its own state: its firmware version, what it's doing, its legs' settings, and when a move is done. None of your notifications, messages or other data go to a robot.</li>
+            <li>COBOT's link is encrypted once you pair it with the code on its screen. The rover has no pairing and its link isn't encrypted; it carries only driving commands.</li>
+            <li>The app keeps each robot's Bluetooth address on your phone, to reconnect to it.</li>
+        </ul>
     </div>
 
     <div class="section">
@@ -136,7 +144,7 @@
         <ul>
             <li>your settings (buddy settings, theme, which apps may reach the buddy, your partners' names and genders, notification options);</li>
             <li>your alarms (time, days and label);</li>
-            <li>the paired buddy's address and when it was last seen;</li>
+            <li>the paired buddy's and robots' addresses, and when the buddy was last seen;</li>
             <li>the last weather (if on).</li>
         </ul>
         <p>We have no copy of any of it.</p>
@@ -161,7 +169,7 @@
         <h2>9. Permissions the app asks for</h2>
         <table>
             <tr><th>Permission</th><th>Why</th></tr>
-            <tr><td>Nearby devices (Bluetooth)</td><td>To connect to your buddy</td></tr>
+            <tr><td>Nearby devices (Bluetooth)</td><td>To connect to your buddy and your robots</td></tr>
             <tr><td>Notifications</td><td>To show the app's own status notification and the alarm</td></tr>
             <tr><td>Notification access</td><td>To forward the notifications you choose to your buddy</td></tr>
             <tr><td>Companion device, run in the background, connected-device service</td><td>To keep the link to your buddy while the app is closed</td></tr>
@@ -186,8 +194,8 @@
     <div class="section">
         <h2>11. Keeping and deleting your data</h2>
         <ul>
-            <li><strong>On your phone:</strong> everything stays until you change it, use <strong>Forget buddy</strong> (removes the pairing), clear the app's data, or uninstall the app, which deletes it all.</li>
-            <li><strong>On your buddy:</strong> the buddy keeps its own settings, alarms and current note in its memory until they are changed or the device is reset.</li>
+            <li><strong>On your phone:</strong> everything stays until you change it, use <strong>Forget buddy</strong>, <strong>Forget rover</strong> or <strong>Forget COBOT</strong> (removes that pairing), clear the app's data, or uninstall the app, which deletes it all.</li>
+            <li><strong>On your buddy:</strong> the buddy keeps its own settings, alarms and current note in its memory until they are changed or the device is reset. COBOT keeps its legs' calibration the same way.</li>
             <li><strong>With us:</strong> nothing to delete; we don't hold any of your data.</li>
         </ul>
     </div>
@@ -215,7 +223,7 @@
     <div class="section">
         <h2>Summary</h2>
         <ul>
-            <li>✅ Talks only to your own buddy, over Bluetooth</li>
+            <li>✅ Talks only to your own buddy and robots, over Bluetooth</li>
             <li>✅ Only the notifications from apps you choose; message text can be hidden</li>
             <li>✅ Approximate location only for the optional weather, sent to Open-Meteo</li>
             <li>✅ No account, no ads, no analytics, no servers of ours</li>

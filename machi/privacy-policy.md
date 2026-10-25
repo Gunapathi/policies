@@ -1,6 +1,6 @@
 # Machi — Privacy Policy
 
-**Last Updated: October 10, 2026**
+**Last Updated: October 25, 2026**
 
 > **Privacy first:** Machi talks to your own Machi desk buddy over Bluetooth, straight from your
 > phone. There is no account, no ads and no analytics, and nothing is sent to our servers: we
@@ -15,7 +15,8 @@ updated together.
 
 Machi is the companion app for the Machi desk buddy, a small device with a screen that you own
 and pair with your phone. The app sends things from your phone to the buddy so it can show
-them, and controls what the buddy does.
+them, and controls what the buddy does. It also drives Machi's robots, if you have one: the
+rover and COBOT (a four-legged robot).
 
 ## 2. Notifications and calls
 
@@ -60,6 +61,19 @@ phone receives:
   principle read it. Use **Hide message text** if that matters to you.
 - The app keeps your buddy's Bluetooth address on your phone, to reconnect to it.
 
+### Your robots (optional): the rover and COBOT
+
+- The app pairs a robot the same way: Android's device screen, or the QR code on COBOT's display.
+- It links to a robot only while that robot's page is open in the app, and sends it only what you
+  tap: driving or walking commands, its moves and face, and for COBOT its calibration (each leg's
+  trim and direction, which COBOT keeps).
+- A robot sends back only its own state: its firmware version, what it's doing, its legs'
+  settings, and when a move is done. None of your notifications, messages or other data go to a
+  robot.
+- COBOT's link is encrypted once you pair it with the code on its screen. The rover has no
+  pairing and its link isn't encrypted; it carries only driving commands.
+- The app keeps each robot's Bluetooth address on your phone, to reconnect to it.
+
 ## 4. Location and weather (optional, off by default)
 
 - Only if you switch **Weather** on, the app asks for your **approximate** location (never
@@ -78,7 +92,7 @@ Only on your phone, in the app's private storage:
 - your settings (buddy settings, theme, which apps may reach the buddy, your partners'
   names and genders, notification options);
 - your alarms (time, days and label);
-- the paired buddy's address and when it was last seen;
+- the paired buddy's and robots' addresses, and when the buddy was last seen;
 - the last weather (if on).
 
 We have no copy of any of it.
@@ -107,7 +121,7 @@ camera image. Google's privacy policy applies to Play services:
 
 | Permission | Why |
 |---|---|
-| Nearby devices (Bluetooth) | To connect to your buddy |
+| Nearby devices (Bluetooth) | To connect to your buddy and your robots |
 | Notifications | To show the app's own status notification and the alarm |
 | Notification access | To forward the notifications you choose to your buddy |
 | Companion device, run in the background, connected-device service | To keep the link to your buddy while the app is closed |
@@ -126,10 +140,11 @@ camera image. Google's privacy policy applies to Play services:
 
 ## 11. Keeping and deleting your data
 
-- **On your phone:** everything stays until you change it, use **Forget buddy** (removes the
-  pairing), clear the app's data, or uninstall the app, which deletes it all.
+- **On your phone:** everything stays until you change it, use **Forget buddy**, **Forget
+  rover** or **Forget COBOT** (removes that pairing), clear the app's data, or uninstall the
+  app, which deletes it all.
 - **On your buddy:** the buddy keeps its own settings, alarms and current note in its memory
-  until they are changed or the device is reset.
+  until they are changed or the device is reset. COBOT keeps its legs' calibration the same way.
 - **With us:** nothing to delete; we don't hold any of your data.
 
 ## 12. Children
@@ -153,7 +168,7 @@ Questions about this policy or your data:
 
 ## Summary
 
-- ✅ Talks only to your own buddy, over Bluetooth
+- ✅ Talks only to your own buddy and robots, over Bluetooth
 - ✅ Only the notifications from apps you choose; message text can be hidden
 - ✅ Approximate location only for the optional weather, sent to Open-Meteo
 - ✅ No account, no ads, no analytics, no servers of ours
