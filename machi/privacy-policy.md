@@ -70,8 +70,9 @@ phone receives:
 - A robot sends back only its own state: its firmware version, what it's doing, its legs'
   settings, and when a move is done. None of your notifications, messages or other data go to a
   robot.
-- A robot's link isn't encrypted (neither the rover nor COBOT has a pairing code); it carries
-  only the robot's commands and state, nothing else of yours.
+- COBOT pairs like the buddy (the QR and the code on its screen), so its link is encrypted; the
+  rover's link isn't (it has no pairing code). A robot's link carries only its commands and
+  state, nothing else of yours.
 - The app keeps each robot's Bluetooth address on your phone, to reconnect to it.
 
 ## 4. Location and weather (optional, off by default)
