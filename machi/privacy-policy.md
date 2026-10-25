@@ -63,15 +63,15 @@ phone receives:
 
 ### Your robots (optional): the rover and COBOT
 
-- The app pairs a robot the same way: Android's device screen, or the QR code on COBOT's display.
+- The app pairs a robot the same way: Android's device screen. A robot has no QR code and no pairing code.
 - It links to a robot only while that robot's page is open in the app, and sends it only what you
   tap: driving or walking commands, its moves and face, and for COBOT its calibration (each leg's
   trim and direction, which COBOT keeps).
 - A robot sends back only its own state: its firmware version, what it's doing, its legs'
   settings, and when a move is done. None of your notifications, messages or other data go to a
   robot.
-- COBOT's link is encrypted once you pair it with the code on its screen. The rover has no
-  pairing and its link isn't encrypted; it carries only driving commands.
+- A robot's link isn't encrypted (neither the rover nor COBOT has a pairing code); it carries
+  only the robot's commands and state, nothing else of yours.
 - The app keeps each robot's Bluetooth address on your phone, to reconnect to it.
 
 ## 4. Location and weather (optional, off by default)
