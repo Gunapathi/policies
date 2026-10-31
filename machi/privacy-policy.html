@@ -70,7 +70,7 @@
 </head>
 <body>
     <h1>Machi — Privacy Policy</h1>
-    <p class="last-updated">Last Updated: October 25, 2026</p>
+    <p class="last-updated">Last Updated: October 31, 2026</p>
 
     <div class="highlight">
         <strong>Privacy first:</strong> Machi talks to your own Machi desk buddy over Bluetooth, straight from your phone. There is no account, no ads and no analytics, and nothing is sent to our servers: we don't run any. The only thing that goes to the internet is an approximate location for the weather, and only if you switch the weather on.
@@ -80,7 +80,7 @@
 
     <div class="section">
         <h2>1. What Machi is</h2>
-        <p>Machi is the companion app for the Machi desk buddy, a small device with a screen that you own and pair with your phone. The app sends things from your phone to the buddy so it can show them, and controls what the buddy does. It also drives Machi's robots, if you have one: the rover and COBOT (a four-legged robot).</p>
+        <p>Machi is the companion app for the Machi desk buddy, a small device with a screen that you own and pair with your phone. The app sends things from your phone to the buddy so it can show them, and controls what the buddy does. It also drives Machi's robots, if you have one: the rover, COBOT (a four-legged robot) and the crawler (an eight-servo spider).</p>
     </div>
 
     <div class="section">
@@ -118,12 +118,12 @@
             <li>The link is direct between your phone and your buddy; no server is involved. It is not encrypted yet (encrypted pairing is planned), so a nearby device with special tools could in principle read it. Use <strong>Hide message text</strong> if that matters to you.</li>
             <li>The app keeps your buddy's Bluetooth address on your phone, to reconnect to it.</li>
         </ul>
-        <h3>Your robots (optional): the rover and COBOT</h3>
+        <h3>Your robots (optional): the rover, COBOT and the crawler</h3>
         <ul>
             <li>The app pairs a robot the same way: Android's device screen. A robot has no QR code and no pairing code.</li>
-            <li>It links to a robot only while that robot's page is open in the app, and sends it only what you tap: driving or walking commands, its moves and face, and for COBOT its calibration (each leg's trim and direction, which COBOT keeps).</li>
-            <li>A robot sends back only its own state: its firmware version, what it's doing, its legs' settings, and when a move is done. None of your notifications, messages or other data go to a robot.</li>
-            <li>COBOT pairs like the buddy (the QR and the code on its screen), so its link is encrypted; the rover's link isn't (it has no pairing code). A robot's link carries only its commands and state, nothing else of yours.</li>
+            <li>It links to a robot only while that robot's page is open in the app, and sends it only what you tap: driving or walking commands, its moves and face, and for COBOT and the crawler their calibration (each leg's or joint's trim and direction, which the robot keeps).</li>
+            <li>A robot sends back only its own state: its firmware version, what it's doing, its legs' settings, and when a move is done; the crawler also its battery level and how far it tilts. None of your notifications, messages or other data go to a robot.</li>
+            <li>COBOT and the crawler pair like the buddy (the QR and the code on their screens), so their links are encrypted; the rover's link isn't (it has no pairing code). A robot's link carries only its commands and state, nothing else of yours.</li>
             <li>The app keeps each robot's Bluetooth address on your phone, to reconnect to it.</li>
         </ul>
     </div>
@@ -194,8 +194,8 @@
     <div class="section">
         <h2>11. Keeping and deleting your data</h2>
         <ul>
-            <li><strong>On your phone:</strong> everything stays until you change it, use <strong>Forget buddy</strong>, <strong>Forget rover</strong> or <strong>Forget COBOT</strong> (removes that pairing), clear the app's data, or uninstall the app, which deletes it all.</li>
-            <li><strong>On your buddy:</strong> the buddy keeps its own settings, alarms and current note in its memory until they are changed or the device is reset. COBOT keeps its legs' calibration the same way.</li>
+            <li><strong>On your phone:</strong> everything stays until you change it, use <strong>Forget buddy</strong>, <strong>Forget rover</strong>, <strong>Forget COBOT</strong> or <strong>Forget crawler</strong> (removes that pairing), clear the app's data, or uninstall the app, which deletes it all.</li>
+            <li><strong>On your buddy:</strong> the buddy keeps its own settings, alarms and current note in its memory until they are changed or the device is reset. COBOT and the crawler keep their calibration the same way.</li>
             <li><strong>With us:</strong> nothing to delete; we don't hold any of your data.</li>
         </ul>
     </div>

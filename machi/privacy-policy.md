@@ -1,6 +1,6 @@
 # Machi — Privacy Policy
 
-**Last Updated: October 25, 2026**
+**Last Updated: October 31, 2026**
 
 > **Privacy first:** Machi talks to your own Machi desk buddy over Bluetooth, straight from your
 > phone. There is no account, no ads and no analytics, and nothing is sent to our servers: we
@@ -16,7 +16,7 @@ updated together.
 Machi is the companion app for the Machi desk buddy, a small device with a screen that you own
 and pair with your phone. The app sends things from your phone to the buddy so it can show
 them, and controls what the buddy does. It also drives Machi's robots, if you have one: the
-rover and COBOT (a four-legged robot).
+rover, COBOT (a four-legged robot) and the crawler (an eight-servo spider).
 
 ## 2. Notifications and calls
 
@@ -61,17 +61,17 @@ phone receives:
   principle read it. Use **Hide message text** if that matters to you.
 - The app keeps your buddy's Bluetooth address on your phone, to reconnect to it.
 
-### Your robots (optional): the rover and COBOT
+### Your robots (optional): the rover, COBOT and the crawler
 
 - The app pairs a robot the same way: Android's device screen. A robot has no QR code and no pairing code.
 - It links to a robot only while that robot's page is open in the app, and sends it only what you
-  tap: driving or walking commands, its moves and face, and for COBOT its calibration (each leg's
-  trim and direction, which COBOT keeps).
+  tap: driving or walking commands, its moves and face, and for COBOT and the crawler their
+  calibration (each leg's or joint's trim and direction, which the robot keeps).
 - A robot sends back only its own state: its firmware version, what it's doing, its legs'
-  settings, and when a move is done. None of your notifications, messages or other data go to a
+  settings, and when a move is done; the crawler also its battery level and how far it tilts. None of your notifications, messages or other data go to a
   robot.
-- COBOT pairs like the buddy (the QR and the code on its screen), so its link is encrypted; the
-  rover's link isn't (it has no pairing code). A robot's link carries only its commands and
+- COBOT and the crawler pair like the buddy (the QR and the code on their screens), so their links
+  are encrypted; the rover's link isn't (it has no pairing code). A robot's link carries only its commands and
   state, nothing else of yours.
 - The app keeps each robot's Bluetooth address on your phone, to reconnect to it.
 
@@ -142,10 +142,10 @@ camera image. Google's privacy policy applies to Play services:
 ## 11. Keeping and deleting your data
 
 - **On your phone:** everything stays until you change it, use **Forget buddy**, **Forget
-  rover** or **Forget COBOT** (removes that pairing), clear the app's data, or uninstall the
+  rover**, **Forget COBOT** or **Forget crawler** (removes that pairing), clear the app's data, or uninstall the
   app, which deletes it all.
 - **On your buddy:** the buddy keeps its own settings, alarms and current note in its memory
-  until they are changed or the device is reset. COBOT keeps its legs' calibration the same way.
+  until they are changed or the device is reset. COBOT and the crawler keep their calibration the same way.
 - **With us:** nothing to delete; we don't hold any of your data.
 
 ## 12. Children
