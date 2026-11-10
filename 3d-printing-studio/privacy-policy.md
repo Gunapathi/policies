@@ -301,8 +301,9 @@ If you do activate:
 - **What is stored:** your email address, the activation's start and end dates,
   what the activation includes, a **device identifier** for the device the
   activation is used on, that device's **name** (the make and model Android
-  reports, such as “Google Pixel 7”), when the activation was last moved to a
-  device, and how many device moves remain.
+  reports, such as “Google Pixel 7”), the app's **build number** on that
+  device (such as 28), when the activation was last moved to a device, and
+  how many device moves remain.
 - **About the device identifier:** it is the identifier Android itself provides
   to an app for the device it is installed on. It is specific to this app on
   this device — other apps receive a different value, so it cannot be used to
@@ -424,9 +425,10 @@ corresponding feature:
   (subject to Google's Privacy Policy).
 - **Google Sign-In** and **Google Firebase (Firestore)** — for optional account
   activation, storing only your email address, the activation dates and what it
-  includes, and a device identifier and device name (section 8). When you
-  accept the terms and conditions, we record your email address, the version
-  you accepted and the date.
+  includes, a device identifier and device name, and the app's build number
+  (section 8). When you accept the terms and conditions, we record your email
+  address, the version of the terms you accepted, the date and the app's
+  build number.
 - **Your phone's address book** — read only, and only while you are using the
   contact picker (section 5).
 - **Apps you share invoices or exports through** — e.g. WhatsApp or your email
@@ -776,7 +778,8 @@ deletion of an activation record or a device release:
 - Cloud backup is optional, goes to *your* Google Drive, and uses the narrowest
   possible permission.
 - Account activation is optional and sends only your email address, the
-  activation dates, a device identifier and the device name — used for
+  activation dates, a device identifier, the device name and the app's build
+  number — used for
   registration and activation reminders, never for marketing.
 - Asking us to set an account up opens a Google Form in your browser. It sends
   what you type into it — your email, and anything optional you choose to add —
