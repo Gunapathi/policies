@@ -3,7 +3,7 @@
 **Publisher:** NETSTED (Netsted Infotech), Trichy, Tamil Nadu, India
 **Contact:** netsted.infotech@gmail.com
 **Applies to:** 3D Printing Studio version 3.4.1 and later
-**Last updated:** 30 September 2026
+**Last updated:** 10 November 2026
 
 ---
 
@@ -400,6 +400,9 @@ corresponding feature:
 - **Apps you share invoices or exports through** — e.g. WhatsApp or your email
   client (subject to their own privacy policies).
 
+Once a day the app checks whether a newer version is available. No personal
+data is sent.
+
 We do not sell, rent or share your data with anyone, and we do not use it for
 advertising.
 
@@ -770,5 +773,5 @@ deletion of an activation record or a device release:
 
 ---
 
-*3D Printing Studio — Privacy Policy & Terms of Use. Last updated 30 September
+*3D Printing Studio — Privacy Policy & Terms of Use. Last updated 10 November
 2026. © NETSTED (Netsted Infotech), Trichy, Tamil Nadu, India.*
