@@ -1,30 +1,15 @@
 <!--
 DRAFT FOR THE PUBLISHER — this comment does not render. Delete it before publishing.
 
-1. Section 23 (after the indemnity) is yours to write: the app data shared
-   for analysis. The facts for it are in a second hidden note, inside
-   section 23. No other section describes it; section 11 only points to
-   it. Section 11 also says the publisher "does not host, store or have
-   access to your records": make section 23 agree with that, or change it.
-2. The privacy policy still says, word for word, and must change before the
-   sending is switched on:
-   - the opening box: "We operate no servers, run no analytics, and never
-     receive a copy of your data";
-   - Summary: "orders, customers, filament, prices, bank details and invoices
-     are never sent to us" and "No analytics, no tracking, no ads";
-   - section 29: "this document is the whole agreement between you and the
-     publisher about the app" (these terms now sit beside it; section 28
-     below says how the two fit).
-   Google Play's Data Safety form must match whatever section 23 says.
-3. Make the HTML twin from this file, as for the privacy policy, and publish
+1. Make the HTML twin from this file, as for the privacy policy, and publish
    it at the address in the Contact section. The app links to that address.
-4. Everything else follows the live privacy policy's Part B word for word in
+2. Everything else follows the live privacy policy's Part B word for word in
    substance (licence, GST, figures, activation, refunds, warranty, the
    INR 1,000 cap, indemnity, Trichy). These are NEW, not in Part B — keep,
    change or delete them: the age of 18 (section 3), what survives the end
-   of the terms (24), the 30-day attempt to settle before court (26), and
+   of the terms (23), the 30-day attempt to settle before court (25), and
    assignment, events outside our control and "the privacy policy wins on
-   data" (28). This draft is not legal advice; have a lawyer read it if you
+   data" (27). This draft is not legal advice; have a lawyer read it if you
    can.
 -->
 
@@ -90,7 +75,7 @@ both.
 - The app is single-user. It is designed for one operator on one device and
   does not synchronise between devices. You move to a new device by taking a
   backup and restoring it (section 12).
-- This licence ends when you stop using the app, or under section 24.
+- This licence ends when you stop using the app, or under section 23.
 
 ## 5. Acceptable use
 
@@ -115,8 +100,8 @@ What you enter, print and issue with the app is your act, not ours.
 - **To sign in with Google you must accept these terms.** The app asks before
   you sign in, and asks again when they change. We record your email address,
   the version you accepted, the date and the app's build number. If you do
-  not accept, you can remove Google Drive from the app; your records stay on
-  your device.
+  not accept, remove Google Drive from the app or close the app: Google
+  sign-in cannot be used without accepting. Your records stay on your device.
 - You are responsible for your Google account, your device, your screen lock,
   the app lock and your backup password, and for everything done with them.
 - The app never sees your Google password. Sign-in is handled by Google and is
@@ -319,34 +304,7 @@ what you enter, issue or share with the app, from personal data of your
 customers that you record in it, or from your breach of these terms or of any
 law that applies to your business.
 
-## 23. App data and analysis
-
-<!--
-HIDDEN — the facts for this section, as the app is planned (roadmap 100).
-This note does not show on the page. Write the section from it, then delete
-it if you do not want it in the page's source.
-
-- Sent only from a phone whose owner has linked Google Drive backup. A phone
-  that keeps only local backups sends nothing.
-- Only what changed since the last send, never the whole set again.
-- What is sent: the counts (customers, orders, quotes, products, printers,
-  money-flow entries); each order's and quote's number, cost and total price;
-  each product's and printer's name and price; the plan; the app version and
-  build; the date and time each part last changed.
-- Never sent: customer names, phone numbers or addresses; bank, GST or
-  business details; notes; invoices; backups.
-- Where it goes: Firebase (Firestore), which the publisher controls.
-- Still to decide and say: who can read it, how long it is kept, what it is
-  used for, and how a user stops it or asks for it to be deleted.
--->
-
-The app does not send app data for analysis — no counts, no totals, nothing
-about your records. If that ever changes, this section and the
-[privacy policy](https://gunapathi.github.io/policies/3d-printing-studio/privacy-policy.html)
-will say exactly what is sent before it is sent, and you will be asked to
-accept the updated terms.
-
-## 24. Suspension and termination
+## 23. Suspension and termination
 
 - You may stop using the app at any time by uninstalling it. Back up first if
   you want to keep your records.
@@ -355,14 +313,14 @@ accept the updated terms.
 - When these terms end, sections 9, 12, 13, 14, 15 and 19 to 28 continue to
   apply.
 
-## 25. If the app is discontinued
+## 24. If the app is discontinued
 
 - The publisher may stop offering the app or Studio. If that happens, no new
   activations are issued and activations in force are not renewed.
 - Your records stay on your device and can be exported at any time. That is
   why export and local backup stay on every plan.
 
-## 26. Governing law and jurisdiction
+## 25. Governing law and jurisdiction
 
 - These terms, and any dispute arising out of them or out of your use of the
   app, are governed by the laws of **India**.
@@ -372,7 +330,7 @@ accept the updated terms.
 - Before going to court, write to netsted.infotech@gmail.com. We will try in
   good faith to settle the matter within 30 days.
 
-## 27. Changes to these terms
+## 26. Changes to these terms
 
 - The publisher may update these terms — for example when the app gains a
   feature, a plan changes or the law changes.
@@ -381,7 +339,7 @@ accept the updated terms.
 - Continuing to use the app after an update means you accept the updated
   terms.
 
-## 28. General
+## 27. General
 
 - **These terms and the privacy policy work together.** The privacy policy
   governs how data is handled; these terms govern everything else. If they
@@ -396,7 +354,7 @@ accept the updated terms.
 - **Store terms also apply:** if you got the app through Google Play, that
   store's terms apply to your download.
 
-## 29. Contact
+## 28. Contact
 
 For questions about these terms, your plan or activation:
 
