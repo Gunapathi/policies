@@ -8,9 +8,10 @@
 ---
 
 **Local first.** 3D Printing Studio stores your business data on your own
-device. We operate no servers, run no analytics, and never receive a copy of
-your data. The only time anything leaves your device is when *you* choose to
-back up to your own Google Drive, share an invoice, or activate your account.
+device, and we never receive a copy of your records. Things leave your device
+only when *you* back up to your own Google Drive, share an invoice, or activate
+your account — and, while Google Drive backup is on, a short set of summary
+totals (section 7a).
 
 **This document has two parts.** Part A is the privacy policy — what the app
 stores, what leaves your device and what does not. Part B is the terms of use,
@@ -217,6 +218,29 @@ received from Google APIs adheres to the Google API Services User Data Policy
 its Limited Use requirements. We do not transfer, sell, or use Google user data
 for advertising, and we do not allow humans to read it.
 
+### 7a. Summary totals (only while Google Drive backup is on)
+
+While Google Drive backup is on, the app sends us a short set of summary
+totals, so that we can see how the app is used and improve it. They are worked
+out from the records on your phone, not read from your Google Drive.
+
+- **What is sent:** how many orders, quotes, customers, products and printers
+  the app holds, and how many money-flow entries; the combined value of the
+  orders, of the quotes, and of the product and printer prices; your plan and
+  the app version; and when each figure last changed.
+- **What is never sent:** your customers' names, phone numbers or addresses;
+  any single order, quote or invoice; your business, tax or bank details; your
+  notes; your backups.
+- **Only what changed** since the last time is sent.
+- **Where it goes:** Google Firebase (Firestore), stored with the email address
+  of the Google account you signed in with. Only the publisher can read it.
+- **What it is used for:** understanding how the app is used, and improving
+  it. It is not used for advertising, not sold and not shared.
+- **How long it is kept:** until you ask us to delete it, or for 24 months
+  after it last changed, whichever comes first.
+- **How to stop it:** turn off Google Drive backup. To have what was sent
+  deleted, email netsted.infotech@gmail.com.
+
 ## 8. Account activation (optional)
 
 Some features of the app are unlocked by activating your account. Activation is
@@ -394,7 +418,8 @@ corresponding feature:
   (subject to Google's Privacy Policy).
 - **Google Sign-In** and **Google Firebase (Firestore)** — for optional account
   activation, storing only your email address, the activation dates and what it
-  includes, and a device identifier and device name (section 8).
+  includes, and a device identifier and device name (section 8); and, while
+  Google Drive backup is on, the summary totals in section 7a.
 - **Your phone's address book** — read only, and only while you are using the
   contact picker (section 5).
 - **Apps you share invoices or exports through** — e.g. WhatsApp or your email
@@ -736,9 +761,11 @@ deletion of an activation record or a device release:
 
 ## Summary
 
-- Your business data stays on your device — orders, customers, filament, prices,
-  bank details and invoices are never sent to us.
-- No analytics, no tracking, no ads.
+- Your business records stay on your device — orders, customers, filament,
+  prices, bank details and invoices are never sent to us. While Google Drive
+  backup is on, only summary totals are (section 7a).
+- No ads, no tracking and no third-party analytics. The only figures we
+  receive are the summary totals in section 7a.
 - Contacts are read only when you use the importer, copied not linked, and never
   written to.
 - Cloud backup is optional, goes to *your* Google Drive, and uses the narrowest
