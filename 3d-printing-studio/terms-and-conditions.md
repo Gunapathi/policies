@@ -112,6 +112,10 @@ What you enter, print and issue with the app is your act, not ours.
 
 - You can use the app without signing in. Signing in with a Google account is
   needed only for Google Drive backup and for activation.
+- **To sign in with Google you must accept these terms.** The app asks before
+  you sign in, and asks again when they change. We record your email address,
+  the version you accepted and the date. If you do not accept, you can remove
+  Google Drive from the app; your records stay on your device.
 - You are responsible for your Google account, your device, your screen lock,
   the app lock and your backup password, and for everything done with them.
 - The app never sees your Google password. Sign-in is handled by Google and is

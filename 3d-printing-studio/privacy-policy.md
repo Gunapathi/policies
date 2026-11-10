@@ -419,7 +419,9 @@ corresponding feature:
 - **Google Sign-In** and **Google Firebase (Firestore)** — for optional account
   activation, storing only your email address, the activation dates and what it
   includes, and a device identifier and device name (section 8); and, while
-  Google Drive backup is on, the summary totals in section 7a.
+  Google Drive backup is on, the summary totals in section 7a. When you
+  accept the terms and conditions, we record your email address, the version
+  you accepted and the date.
 - **Your phone's address book** — read only, and only while you are using the
   contact picker (section 5).
 - **Apps you share invoices or exports through** — e.g. WhatsApp or your email
