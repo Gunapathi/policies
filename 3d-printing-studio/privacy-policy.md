@@ -10,8 +10,7 @@
 **Local first.** 3D Printing Studio stores your business data on your own
 device, and we never receive a copy of your records. Things leave your device
 only when *you* back up to your own Google Drive, share an invoice, or activate
-your account — and, while Google Drive backup is on, a short set of summary
-totals (section 7a).
+your account.
 
 **This document has two parts.** Part A is the privacy policy — what the app
 stores, what leaves your device and what does not. Part B is the terms of use,
@@ -218,6 +217,12 @@ received from Google APIs adheres to the Google API Services User Data Policy
 its Limited Use requirements. We do not transfer, sell, or use Google user data
 for advertising, and we do not allow humans to read it.
 
+<!--
+ON HOLD (owner, 2026-11-10): nothing is sent today, not even totals.
+This is section 7a as it was published, kept for when app data is sent.
+Restore it only with the release that sends, together with its lines in
+the opening box, section 13 and the Summary, and the terms' section 23.
+
 ### 7a. Summary totals (only while Google Drive backup is on)
 
 While Google Drive backup is on, the app sends us a short set of summary
@@ -240,6 +245,7 @@ out from the records on your phone, not read from your Google Drive.
   after it last changed, whichever comes first.
 - **How to stop it:** turn off Google Drive backup. To have what was sent
   deleted, email netsted.infotech@gmail.com.
+-->
 
 ## 8. Account activation (optional)
 
@@ -418,8 +424,7 @@ corresponding feature:
   (subject to Google's Privacy Policy).
 - **Google Sign-In** and **Google Firebase (Firestore)** — for optional account
   activation, storing only your email address, the activation dates and what it
-  includes, and a device identifier and device name (section 8); and, while
-  Google Drive backup is on, the summary totals in section 7a. When you
+  includes, and a device identifier and device name (section 8). When you
   accept the terms and conditions, we record your email address, the version
   you accepted and the date.
 - **Your phone's address book** — read only, and only while you are using the
@@ -764,10 +769,8 @@ deletion of an activation record or a device release:
 ## Summary
 
 - Your business records stay on your device — orders, customers, filament,
-  prices, bank details and invoices are never sent to us. While Google Drive
-  backup is on, only summary totals are (section 7a).
-- No ads, no tracking and no third-party analytics. The only figures we
-  receive are the summary totals in section 7a.
+  prices, bank details and invoices are never sent to us.
+- No analytics, no tracking, no ads.
 - Contacts are read only when you use the importer, copied not linked, and never
   written to.
 - Cloud backup is optional, goes to *your* Google Drive, and uses the narrowest

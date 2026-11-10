@@ -183,8 +183,7 @@ What you enter, print and issue with the app is your act, not ours.
 - The app is local first. Your records are stored on your device, in the
   app's own storage, and nowhere else unless you send them somewhere.
 - Your records leave your device only when you choose: a backup to your own
-  Google Drive, or an invoice or export you share — and as section 23
-  describes.
+  Google Drive, or an invoice or export you share.
 - The publisher does not host, store or have access to your records, and
   cannot recover them for you.
 - The privacy policy describes in full what is stored, what leaves your
@@ -319,7 +318,7 @@ what you enter, issue or share with the app, from personal data of your
 customers that you record in it, or from your breach of these terms or of any
 law that applies to your business.
 
-## 23. App data shared for analysis
+## 23. App data and analysis
 
 <!--
 HIDDEN — the facts for this section, as the app is planned (roadmap 100).
@@ -340,9 +339,11 @@ it if you do not want it in the page's source.
   used for, and how a user stops it or asks for it to be deleted.
 -->
 
-Details of the app data we collect, and how we use it, are in the
-[privacy policy](https://gunapathi.github.io/policies/3d-printing-studio/privacy-policy.html),
-section 7a.
+The app does not send app data for analysis — no counts, no totals, nothing
+about your records. If that ever changes, this section and the
+[privacy policy](https://gunapathi.github.io/policies/3d-printing-studio/privacy-policy.html)
+will say exactly what is sent before it is sent, and you will be asked to
+accept the updated terms.
 
 ## 24. Suspension and termination
 
